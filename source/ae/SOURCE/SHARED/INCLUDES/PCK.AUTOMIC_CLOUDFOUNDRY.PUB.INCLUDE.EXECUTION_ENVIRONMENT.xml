@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.INCLUDE.EXECUTION_ENVIRONMENT">
+<HEADER state="1">
+<Title>Set execution environment</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[: SET &UC4RB_CF_RETCODE# = 0
+:SWITCH &$PLATFORM#
+:CASE "WINDOWS"
+  @echo off
+  SET CF_HOME=&UC4RB_CF_HOMEDIR#
+  SET ERRORS=0
+:CASE "UNIX"
+  export CF_HOME=&UC4RB_CF_HOMEDIR#
+  errors=0
+:OTHER
+:ENDSWITCH
+:INC PCK.ITPA_SHARED.PRV.INCLUDE.CHANGE_DIRECTORY_TO_AGENT_BIN]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[It sets general environmental variable(s) which can be further used in Jobs. It also changes the agent current directory to bin.
+
+This Include object can be used for both Windows and Unix environment as per the Agent]]></DOC>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

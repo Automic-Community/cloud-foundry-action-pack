@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.INCLUDE.PREP_AUTHINFO">
+<HEADER state="1">
+<Title>Prepares authentication info</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[:  SET &AUTHINFO_VARA# = "PCK.AUTOMIC_CLOUDFOUNDRY.PRV.VARA.AUTHINFO"
+!  check if the given authentication token exists in VARA
+:  SET &UC4RB_CF_FILECONTENTS# = GET_VAR(&AUTHINFO_VARA#, &UC4RB_CF_AUTHTOKEN#, 1)
+:  IF &UC4RB_CF_FILECONTENTS# <> ""
+:    PRINT "READ AUTH INFO SUCCESSFULLY FROM VARA!"
+:    INC PCK.AUTOMIC_CLOUDFOUNDRY.PUB.INCLUDE.CREATE_FILE
+:    IF &UC4RB_CF_RETCODE# <> 0
+:       SET &UC4RB_LOGGING_ERROR# = "Unable to transfer authentication information on agent OS &UC4RB_CF_CONFIGFILE#"
+:       INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
+:    ENDIF
+:  ELSE
+:    SET &UC4RB_CF_RETCODE# = 1
+:    SET &UC4RB_LOGGING_ERROR# = "INVALID AUTHENTICATION TOKEN"
+:    INC PCK.ITPA_SHARED.PRV.INCLUDE.LOGGING.ERROR
+:  ENDIF]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[It reads the Cloud Foundry authentication information from AE VARA object against the specified authentication token. It writes the file on Agent OS for the specified file path.
+
+Moreover it also sets a return code which can be used to validate whether authentication information has been successfully transferred on Agent OS or not.
+]]></DOC>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

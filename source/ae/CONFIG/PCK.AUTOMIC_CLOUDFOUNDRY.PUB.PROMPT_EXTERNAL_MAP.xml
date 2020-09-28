@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<VARA OVD_VRName="FREI" data_type="STATIC" name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.PROMPT_EXTERNAL_MAP" replacementmode="2">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType>STATIC</OH_SubType>
+</HEADER>
+<ATTR_VARA state="1">
+<Type>C|Text</Type>
+<lblSource>Static</lblSource>
+<source>STATIC</source>
+<VRName>FREI|Freely selected</VRName>
+<NotFoundErr>0</NotFoundErr>
+<NotFoundDef>1</NotFoundDef>
+<ShareN>0</ShareN>
+<ShareL>0</ShareL>
+<ShareR>0</ShareR>
+<MaxValue_C>1024</MaxValue_C>
+<CheckMax_C>0</CheckMax_C>
+<uppercase>0</uppercase>
+<sortColumn>0</sortColumn>
+<sortDirection>0</sortDirection>
+</ATTR_VARA>
+<VARA state="1">
+<Variables>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.BIND_SERVICE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.BIND_SERVICE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CHANGE_TARGET/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CHANGE_TARGET/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_DOMAIN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_DOMAIN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_ROUTE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_ROUTE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_SERVICE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_SERVICE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_USER_PROVIDED_SERVICE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.CREATE_USER_PROVIDED_SERVICE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_ROUTE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_ROUTE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_SERVICE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.DELETE_SERVICE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.LOGIN/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.LOGIN/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.LOGOUT/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.LOGOUT/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.MAP_ROUTE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.MAP_ROUTE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.PUSH_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.PUSH_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.RESTART_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.RESTART_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.SCALE_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.SCALE_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.START_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.START_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.STOP_APPLICATION/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.STOP_APPLICATION/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.UNBIND_SERVICE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.UNBIND_SERVICE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.UNMAP_ROUTE/AGENT#" Value="&amp;AGENT#" Value1="" Value2="" Value3="" Value4=""/>
+<row Name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.ACTION.UNMAP_ROUTE/LOGIN#" Value="&amp;LOGIN#" Value1="" Value2="" Value3="" Value4=""/>
+</Variables>
+</VARA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</VARA>
+</uc-export>

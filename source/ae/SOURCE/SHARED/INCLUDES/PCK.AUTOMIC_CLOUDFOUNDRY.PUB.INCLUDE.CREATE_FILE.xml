@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.INCLUDE.CREATE_FILE">
+<HEADER state="1">
+<Title>Create File with contents</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[! WRITE FILE AT SPECIFIED FILE PATH
+: SET &HND# = CREATE_PROCESS(NEW)
+: SET &UC4RB_CF_RETCODE# = PUT_PROCESS_LINE(&HND#, &UC4RB_CF_FILECONTENTS#)
+: IF &UC4RB_CF_RETCODE# = 0
+:   SET &UC4RB_CF_RETCODE# = WRITE_PROCESS(&HND#, &UC4RB_CF_CONFIGFILE#,&AGENT#,&LOGIN#,OVERWRITE)
+: ENDIF
+: CLOSE_PROCESS &HND#]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[It writes the specified information into specified file on the Agent OS. Moreover it also sets a return code which can be used to validate whether file contents has been written successfully or not.
+]]></DOC>
+</DOCU_Docu>
+</JOBI>
+</uc-export>

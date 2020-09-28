@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<JOBI name="PCK.AUTOMIC_CLOUDFOUNDRY.PUB.INCLUDE.UPDATE_AUTHINFO">
+<HEADER state="1">
+<Title>Update auth info</Title>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<SCRIPT mode="1" state="1">
+<MSCRI><![CDATA[! ---------------- Read FILE from Agent OS FROM THE SPECIFIED FILE PATH -----------
+: SET &HND# = PREP_PROCESS_FILE(&AGENT#, "&UC4RB_CF_CONFIGFILE#",,"COL=NONE",, 'UC_LOGIN=&LOGIN#')
+: SET &UC4RB_CF_AUTHINFO# = ""
+: PROCESS &HND#
+:   SET &LINE# = GET_PROCESS_LINE(&HND#)
+:   SET &UC4RB_CF_AUTHINFO# = STR_CAT(&UC4RB_CF_AUTHINFO#, &LINE#)
+: ENDPROCESS
+: CLOSE_PROCESS &HND#
+: IF &UC4RB_CF_AUTHINFO# <> ""
+:     PUT_VAR "PCK.AUTOMIC_CLOUDFOUNDRY.PRV.VARA.AUTHINFO", &UC4RB_CF_AUTHTOKEN#, "&UC4RB_CF_AUTHINFO#"
+:     PRINT "AUTH INFO has been updated successfully!"
+: ELSE
+:    MODIFY_STATE STATUS_TEXT="Unable to retrieve authentication information from agent OS"
+:    MODIFY_STATE RETCODE=1
+: ENDIF
+]]></MSCRI>
+</SCRIPT>
+<DOCU_Docu state="1" type="text">
+<DOC><![CDATA[It reads the Cloud Foundry authentication information using the specified file from Agent OS and further stores the information into an AE VARA object against the specified authentication token  i.e. current job's runid.
+
+In case it is not able to read the file from agent OS, it modifies the job's status code and status text.
+
+This include object should be used in PostProcess part of job.]]></DOC>
+</DOCU_Docu>
+</JOBI>
+</uc-export>
